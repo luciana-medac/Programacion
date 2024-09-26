@@ -1,0 +1,45 @@
+Ejercicio 11:
+
+Desarrolla un conversor de bits a bytes
+
+Ejercicio 12:
+
+Haz un programa que pregunte al usuario cuánto dinero tiene en el banco,. Después, el programa debe preguntar cuánto quiere gastar, y hacer las cuentas necesarias. Después, el programa debe preguntar cuánto desea ingresar, y hacer las cuentas necesarias. Por último, muestra el dinero final en la cuenta
+
+Ejercicio 13:
+
+Desarrolla un programa que pregunte al usuario cuántas calorías ha ingerido en el desayuno. Después, debe preguntar cuántas calorías ha ingerido en el almuerzo. Después, debe preguntar cuántas calorías ha ingerido en la cena. Por último, el programa finaliza mostrando las calorías actuales totales ingeridas en el día. DESPUÉS DE CADA PREGUNTA QUE MUESTRE CUÁNTAS CALORÍAS LLEVA EN TOTAL
+
+
+Ejercicio 14:
+
+Desarrolla un conversor de grados Celsius a grados kelvin
+
+Ejercicio 15:
+
+Desarrolla un programa que pregunte al usuario un número de minutos y muestre por consola cuántas horas y minutos son
+
+Ejercicio 16:
+
+Desarrolla un programa que calcule el IMC de una persona (índice de masa corporal) tras preguntarle su peso y su altura.
+
+Ejercicio 17: 
+
+Desarrolla un programa que pida al usuario que introduzca la cantidad de litros de gasolina que caben en el depósito de su coche, y la cantidad de kilómetros que ha recorrido. Luego, calcula e imprime el consumo medio en litros por cada 100 km.
+
+Ejercicio 18: 
+
+Una tienda tiene una oferta que consiste en hacer un 10% de descuento a quienes compren 5 artículos. Para calcular el precio total a pagar te piden que desarrolles un programa que pregunte primero, uno a uno, el precio de los 5 artículos, y después muestre el precio total tras sumar los 5 y aplicar el descuento.
+
+
+
+
+
+Tipo test:
+
+int numero=7; --> está guardando un 7 en una variable nueva
+
+numero=7; --> está guardando un 7 en una variable que ya estaba creada
+
+está guardando un 7 en una variable que ya estaba o está guardando un 7 en una variable nueva?
+
