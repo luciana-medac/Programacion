@@ -50,6 +50,13 @@ public class Apuntes {
 
         }
 
+        //if (solo puede haber una), else if, else (solo puede haber una)
+        
+        //Operadores de comparación: > < <= >= ==
+        
+        //Si hay dos condiciones usamos &&
+
+        
 
     }
 

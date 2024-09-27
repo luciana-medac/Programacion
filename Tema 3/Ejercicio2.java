@@ -24,9 +24,23 @@ public class Ejercicio2 {
 
         }
 
-        else {
+        else if (numero > 21 && numero < 24) {
 
             System.out.println("Buenas noches");
+            
+        }
+
+        else if (numero > 0 && numero <=5) {
+
+            System.out.println("Buenas noches");
+            
+        }
+
+        //el else no es obligatorio, aqui por ejemplo podemos emplearla para decir un error "no se está escribiendo lo que se pide"
+
+        else {
+
+            System.out.println("Esa no es una hora correcta");
 
         }
 
