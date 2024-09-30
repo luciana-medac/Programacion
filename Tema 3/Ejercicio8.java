@@ -23,23 +23,23 @@ public class Ejercicio8 {
 
             if (bordado.equals("si")) {
 
-                float precioBor = precio + 2.5f;
-                System.out.println(" El precio sería de " + precioBor + " euros");
+                precio = precio + 2.5f;
             
             }
 
-            else if (bordado.equals("no")) {
-                System.out.println("El precio será de" + precio + " euros");
-            }
+            
+            System.out.println("El precio será de " + precio + " euros");
+            
         
-        String envio = System.console().readLine("¿Envio o recogida? ")
+        String envio = System.console().readLine("¿Quieres que te lo enviemos? ");
 
-            if (envio.equals("envio")) {
+            if (envio.equals("si")) {
 
-                float precioEn = precio + 5.0f;
-                System.out.println("El precio total sería de" + precioEn);
+                precio = precio + 5.0f;
                 
             }
+        
+        System.out.println("El precio total es: " + precio );
 
 
 
