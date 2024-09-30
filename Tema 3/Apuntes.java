@@ -16,7 +16,7 @@ public class Apuntes {
 
         //Cuando tenga dos opciones
 
-        //la condición solo se pone en el if
+        //la condición solo se pone en el if y en el else if
         //if (numero >= 100) { 
         
         //System.out.println("El numero introducido es mayor que 100 ");
