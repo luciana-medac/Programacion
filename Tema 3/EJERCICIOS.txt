@@ -1,0 +1,36 @@
+Ejercicio 13: 
+
+Calculador de nómina. Programa que te pide nº de horas semanales y calcula tu nómina semanal, teniendo en cuenta que las primeras 40h se cobran a 10€  y las siguientes horas extra a 12€
+
+Ejercicio 14: 
+
+Crea un menú que te de a elegir entre si quieres que te felicite tu santo, por tu cumpleaños o por tu aniversario.
+- Si eliges tu santo, te preguntará tu nombre y te responderá algo como, por ejemplo: "feliz San Lucas".
+- Si eliges cumpleaños, te preguntará cuántos cumples y entonces te felicitará incluyendo tu edad. Por ejemplo: "feliz 30 cumpleaños".
+- Si eliges aniversario, te preguntará de qué es el aniversario para poder decirte algo como "feliz aniversario de boda".
+
+Ejercicio 15:
+
+Piedra, papel o tijera aleatorio.
+
+Ejercicio 16: 
+
+Ruleta: haz un programa que pregunte la edad y si es mayor de edad da las siguientes opciones para jugar a la ruleta:
+1- Colores (rojo, negro o verde).
+2- Números (de 0 a 36 incluidos).
+3- Secciones (1, 2 o 3).
+4- Par o impar.
+En función de la opción seleccionada deberá mostrar aleatoriamente una de las opciones posibles.
+
+Ejercicio 17: 
+
+Desarrolla un programa que simule la tirada de 3 dados y te muestre el resultado de cada uno de los 3, y la suma de los 3.
+
+Ejercicio 18: 
+
+Realiza un programa que muestre al azar el nombre de una carta de la baraja de póquer. Esta baraja está dividida en cuatro palos: picas, corazones, diamantes y tréboles. Cada palo está formado por 13 cartas, de las cuales 9 cartas son numerales y 4 literales: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K y A (que sería el 1). Tu programa deberá mostrar algo como “4 de picas”, “J de tréboles”, etc.
+
+Ejercicio 19: 
+
+Juego ‘jugador contra PC’ de piedra, papel o tijera. Primero el usuario introduce su elección, después el programa genera aleatoriamente la suya y la muestra, y por último el programa indica quién ha ganado.
+
