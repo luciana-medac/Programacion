@@ -15,6 +15,7 @@ public class Ejercicio10 {
         if (cosaUno.equals("si")) {
 
             String preguntaUno = System.console().readLine("¿Qué juego fue GOTY en el 2020? A:TLOU B:Zelda C:Start Valley ");
+            
 
             if (preguntaUno.equals("A")) {
 

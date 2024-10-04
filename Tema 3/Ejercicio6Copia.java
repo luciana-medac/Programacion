@@ -115,7 +115,7 @@ public class Ejercicio6 {
             
         }
 
-        else if (mes.equals("mayo") || mes.equals("Mayo") || mes.equals("5"))) {
+        else if (mes.equals("mayo") || mes.equals("Mayo") || mes.equals("5")) {
 
             int dia = Integer.parseInt(System.console().readLine("Introduce tu día de nacimiento "));
             

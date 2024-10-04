@@ -15,7 +15,7 @@ public class Ejercicio13 {
             horas = horas * 10;
             System.out.println("Te corresponden: " + horas + " euros esta semana");
             
-        }
+        } //ambito de las variables, empieza en un corchete, una variable no puede funcionar fuera de 
 
         else if (horas > 40) {
 
@@ -30,5 +30,10 @@ public class Ejercicio13 {
 
         }
 
+
+
     }
 }
+
+//int nomina = 0;
+//nomina = 400 + (horas - 40)*12
