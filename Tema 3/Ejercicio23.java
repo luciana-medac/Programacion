@@ -11,7 +11,8 @@ public class Ejercicio23 {
 
         for (int i = 1; i <=edad; i++ ){
 
-            System.out.println("Has cumplido este año " + i);
+            //Quiero que se repita mientras la i sea más pequeña que la edad
+            System.out.println("Cumpliste " + i + " años.") ;
 
         }
 
