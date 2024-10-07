@@ -1,3 +1,4 @@
+package OtrasFormas;
 public class Ejercicio14Switch {
 
     public static void main(String[] args) {

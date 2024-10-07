@@ -1,3 +1,4 @@
+package Practicas;
 public class Practica8 {
     
     /* Tienda de banderas. El programa pide el ancho y alto de la bandera en cm

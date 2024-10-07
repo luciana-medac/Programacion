@@ -1,4 +1,5 @@
-public class Apuntes {
+package Apuntes;
+public class ApuntesCondicionales {
 
     //ESTRUCTURAS DE CONTROL --> Mecanismo para alterar el orden de ejecución
 

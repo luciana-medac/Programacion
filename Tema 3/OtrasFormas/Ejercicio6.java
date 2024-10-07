@@ -1,3 +1,4 @@
+package OtrasFormas;
 public class Ejercicio6 {
 
     /*

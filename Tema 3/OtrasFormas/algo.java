@@ -1,3 +1,4 @@
+package OtrasFormas;
 public class Algo {
 
     /*
@@ -9,6 +10,7 @@ public class Algo {
         //Obtener palo aleatorio
         
         int numPalo = (int)(Math.random()*4);
+        String 
 
         switch (numPalo) {
             case 0:

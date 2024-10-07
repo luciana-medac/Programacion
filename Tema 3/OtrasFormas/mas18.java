@@ -1,3 +1,4 @@
+package OtrasFormas;
 public class mas18 {
 
     public static void main(String[] args) {
