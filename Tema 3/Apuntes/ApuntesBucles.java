@@ -5,7 +5,7 @@ public class ApuntesBucles {
 
         //Estructura que repite lo que tiene dentro
 
-    //Tipo 1. bucle for
+    //Tipo 1. bucle FOR
 
     for(int i = 0; i<10; i++) {
 
@@ -21,6 +21,36 @@ public class ApuntesBucles {
         System.out.println("Voy por la repetición " + i);
 
     }
+
+    //Para saber cuál de los dos usar pregunto "Cuántas veces se tiene que repetir el bucle"
+    //Si lo sé --> FOR
+    //Si no lo sé --> WHILE
+
+    //Tipo 2. bucle WHILE
+
+    int num = 5;
+    while (num < 10) { //Se pone solo UNA condición
+
+        System.out.println("Hola");
+        
+    }
+
+    //do no tiene condicion
+        
+        int nume = 5;
+        //lo que haría sería imprimir una vez el hola y después comprobar la condición
+        do{
+
+            System.out.println("hola");
+            
+        } while (nume < 3);
+
+        //tecera versión --> bucle infinito
+
+        while (true) {
+            System.out.println("hola");
+        }
+
         
     }
 
