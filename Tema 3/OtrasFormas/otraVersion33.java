@@ -1,3 +1,4 @@
+package OtrasFormas;
 public class otraVersion33 {
 
     public static void main(String[] args) {

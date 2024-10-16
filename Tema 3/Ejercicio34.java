@@ -8,19 +8,23 @@ public class Ejercicio34 {
 
     public static void main(String[] args) {
         
-        String letra = System.console().readLine("Introduce una letra: ");
-
+        String letra;
         int numVoca = 0;
         int numCons = 0;
 
+        //while (!letra.equals(anObject: "0")) --> mientras sea diferente de cero, haz tal
         do {
 
             letra = System.console().readLine("Introduce una letra: ");
 
             if (letra.equals("a") || letra.equals("e") || letra.equals("i") || letra.equals("o") || letra.equals("u") ) {
 
-                numVoca = numVoca + 1;
+                numVoca = numVoca + 1; //numVoca++ (esto solo se pone cuando es ++); numVoca=+;
                 
+            }
+
+            else if (letra.equals("0")) {
+                System.out.println("Fin del programa");
             }
 
             else {
@@ -30,8 +34,7 @@ public class Ejercicio34 {
             }
 
 
-
-        } while (letra.);
+        } while ( !letra.equals("0"));
 
         System.out.println("El total de consonantes: " + numCons + " El total de vocales: " + numVoca);
 
