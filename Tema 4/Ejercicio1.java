@@ -7,12 +7,26 @@ public class Ejercicio1 {
      */
 
     //Definimos el método sumar que recibirá dos parámetros
-    public static void numeros (int primerNum, int segundoNum){
+    //SOBRECARGA DE MÉTODOS
 
-        System.out.println("La suma es " + (primerNum + segundoNum));
+    public static void numeros (int primerNum, int segundoNum){ //Si ejecuto dos número en el main, se ejecuta este método
+
+        System.out.println("La suma es " + (primerNum + segundoNum)); 
 
     }
     
+    public static void numeros(int n1, int n2, int n3) { //Si ejecuto tres números en el main, se ejecuta este método
+
+        System.out.println(n1 + n2 + n3);
+
+    }
+
+    public static void saludo(){
+
+        System.out.println("Hola");
+
+    }
+
     public static void main(String[] args) {
         
         int num1 = Integer.parseInt(System.console().readLine("Introduce un número: "));
@@ -28,7 +42,14 @@ public class Ejercicio1 {
         int num6 = 3;
         numeros(num5, num6);
 
-        numeros(num4, num6);
+        numeros(num4, num6); //esta función funcionará sumando dos números
+
+        numeros(num4, num5, num6); //esta función funcionará sumando tres números, es la segunda versión del método numeros
+        
+        //dos funciones pueden llamarse igual, pero las variables no
+
+        saludo(); //no hace falta poner nada en el paréntesis porque
+        // en el paréntesis la función no se le ha especificado que va a recibir nada
 
     }
     
