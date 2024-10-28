@@ -11,6 +11,10 @@ public class Apunte1 { //Estas llaven engloban todo el código
  * 
  * LENGUAJES DE CONSULTA:
  * SQL
+ * 
+ * MÉTODOS:
+ * - Procedimientos
+ * - Funciones
  */
     //Método (función o procedimiento)
     //Definiciendo el método (estoy explicando lo que tiene que hacer)
