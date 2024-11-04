@@ -19,7 +19,7 @@ public class Ejercicio7 {
             frase = "Es menor de edad";
         }
 
-        return frase;
+        return frase; //devuelve al main esta variable (la variable es STRING, asi que se pone el STRING arriba)
 
 
     }
