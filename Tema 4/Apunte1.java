@@ -43,3 +43,26 @@ public class Apunte1 { //Estas llaven engloban todo el código
 
 }
 
+/*
+ * Procedimiento --> void
+ * public status void nombreMetodo (){
+ * }
+ * 
+ * Funciones --> no void
+ * public static String nombreFuncion(){
+ * return "hola"
+ * }
+ * 
+ * Parámetos de un método --> datos que van dentro del paréntesis (puede tener o no)
+ * 
+ * Métodos con sobrecarga --> varios métodos con el mismo nombre con distintos parámetros (ejercicio1) | Se llaman igual, 
+ * hacen lo mismo pero con diferentes parámetros
+ * 
+ * Métodos recursivos --> métodos que se llaman/invocan a sí mismos
+ * public status String saludar(){
+ * return "hola";
+ * saludar();
+ * }
+ * 
+ * 
+ */
