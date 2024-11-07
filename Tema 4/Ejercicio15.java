@@ -110,7 +110,7 @@ public class Ejercicio15 {
 
                 switch (numCaRam) {
                     case 1:
-                        numCaRam = (int) (Math.random() * 12) + 1;
+                        numCaRam = (int) (Math.random() * 13) + 1;
                         if (numCaRam == 1) {
                             System.out.println("A de diamantes");
                         } else if (numCaRam == 11) {
@@ -124,7 +124,7 @@ public class Ejercicio15 {
                         }
                         break;
                     case 2:
-                        numCaRam = (int) (Math.random() * 12) + 1;
+                        numCaRam = (int) (Math.random() * 13) + 1;
                         if (numCaRam == 1) {
                             System.out.println("A de corazones");
                         } else if (numCaRam == 11) {
@@ -138,7 +138,7 @@ public class Ejercicio15 {
                         }
                         break;
                     case 3:
-                        numCaRam = (int) (Math.random() * 12) + 1;
+                        numCaRam = (int) (Math.random() * 13) + 1;
                         if (numCaRam == 1) {
                             System.out.println("A de picas");
                         } else if (numCaRam == 11) {
@@ -152,7 +152,7 @@ public class Ejercicio15 {
                         }
                         break;
                     case 4:
-                        numCaRam = (int) (Math.random() * 12) + 1;
+                        numCaRam = (int) (Math.random() * 13) + 1;
                         if (numCaRam == 1) {
                             System.out.println("A de treboles");
                         } else if (numCaRam == 11) {
