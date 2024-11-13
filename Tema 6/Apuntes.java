@@ -30,9 +30,12 @@ public class Apuntes {
         notas [2] = 1; //Cambiar el valor que está en la posición 2
 
         //Crear un array con datos
-        int [] notas1 = {6, 4, 7, 5, 8, 3, 10}
+        int [] notas1 = {6, 4, 7, 5, 8, 3, 10};
         //Crear un array vacío
-        int [] notas2 = new int[8]
-    }
+        int [] notas2 = new int[8];
+
+        notas = null; //está borrando el array
+
+        notas = {0,8...}; //no deja, porque se ha borrado, se tiene que usar el new
 
 }
