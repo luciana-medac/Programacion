@@ -17,20 +17,24 @@ public class Ejercicio7 {
 
     public static void main(String[] args) {
         
+        //Creo los dos arrays
         int [] temperatura = new int[12];
 
-        String [] meses = {"enero", "febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octube","noviembre","diciembre"};
+        String [] meses = {"enero", "febrero","marzo","abril","mayo","junio","julio","agosto",
+        "septiembre","octube","noviembre","diciembre"};
 
+        //Pregunto las temperaturas de cada mes
         for (int i = 0; i < meses.length; i++) {
             
             temperatura[i] = Integer.parseInt(System.console().readLine("Introduce la media de " + meses[i] + ": "));
         }
 
-        for (int i = 0; i < meses.length; i++) {
-            System.out.print( "[" + meses[i] + "]");
-            for (int j = 0; j < temperatura[i]; j++) {
+        //Muestro los asteriscos por cada mes
+        for (int i = 0; i < temperatura.length; i++) {
+            System.out.print( "[" + meses[i] + "]"); //bucle para cada mes
+            for (int j = 0; j < temperatura[i]; j++) {  //bucle para asteriscos de cada mes
                 System.out.print("*");
-            }
+            } //haz esto en solo un mes para prácticarlo
 
             System.out.println();
         }
