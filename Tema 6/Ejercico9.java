@@ -31,9 +31,9 @@ public class Ejercico9 {
                 }
             }
 
-            ordenado[i] = num;
-            numR[posicion] = 0;
-            num = 0;
+            ordenado[i] = num; //guarda en mayor en la primera posición
+            numR[posicion] = 0; //
+            num = 0; 
         }
 
         System.out.println("array ordenado: ");
