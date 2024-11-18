@@ -53,8 +53,7 @@ public class Ejercicio2Bidi {
 
         //Variable que guarde la suma de las notas
         int totalMedia = 0;
-        //Guarda la nota final
-        int notaFinal = 0;
+        
 
         //Bucle para ir guardando la suma de las medias (6+5+7 = 18 (el 18 se guarda en la variable))
         for (int i = 0; i < media.length; i++) {
@@ -62,8 +61,8 @@ public class Ejercicio2Bidi {
         }
 
         //Dividimos entre las asignaturas que haya
-        notaFinal = totalMedia/4;
+        totalMedia = totalMedia/4;
         //Se muestra la nota final
-        System.out.println("La nota final es " + notaFinal);
+        System.out.println("La nota final es " + totalMedia);
     }
 }
