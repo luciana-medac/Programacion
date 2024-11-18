@@ -36,6 +36,7 @@ public class Apuntes {
 
         notas = null; //está borrando el array
 
-        notas = {0,8...}; //no deja, porque se ha borrado, se tiene que usar el new
+        //notas = {0,8...}; //no deja, porque se ha borrado, se tiene que usar el new
 
+}
 }
