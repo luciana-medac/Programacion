@@ -22,6 +22,7 @@ public class Ejercicio1Bidi {
             for (int j = 0; j < numeros[0].length; j++) {
                 System.out.print(numeros[i][j] + " ");
             }
+            System.out.println();
         }
     }
     

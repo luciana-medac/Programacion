@@ -12,6 +12,15 @@ public class Apuntes4 {
         int[][] numerosMatrizA = {{4,3,9},{3,6,7},{9,7,5},{1,2,7}}; //Todos los array de dentro de los array tienen que ser del mismo tipo
                                                                    //Y la misma longitud de datos
 
+        //Cantidad de arrays --> filas
+        //Cantidad de datos de cada array --> columnas
+        //int[][] numerosMatrizA = {
+        //{4,3,9},
+        //{3,6,7},
+        //{9,7,5},
+        //{1,2,7}
+        //};
+
         //Opción 2: crear la matriz vacía
         int[][] numerosMatrizB = new int[4][3]; //El primero es cuántos arrays, el segundo es cuántos datos tiene cada array
 
