@@ -24,6 +24,7 @@ public class jueguito {
             //Ahora en la variable palabra guardamos una palabra del Array, usando el número random para que nos de la posición
             //de una de las palabras
             String palabra = palabrasAleatorias[random];
+            System.out.println(palabra);
 
             //Creamos un char con la longitud de la palabra que se vaya a generar
             char[] solucion = new char[palabra.length()];
@@ -73,6 +74,7 @@ public class jueguito {
                         if (cRespuesta != palabraArray[i]) { //Si el caracter introducido es diferente a un caracter del arrayPalabra
 
                             errores -= 1; //Se le resta al contador errores (hay 10 intentos)
+                            System.out.println(errores);
 
                             //Muestra el siguiente dibujo
                             if (errores == 9) {
