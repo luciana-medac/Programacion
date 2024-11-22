@@ -45,7 +45,7 @@ public class jueguito {
             int resuelto = 0;
 
             //Usamos esta variable para contar cuando introduce una letra equivocada
-            int errores = 10;
+            int errores = 8;
             
             //Do While para que me diga la pregunta una vez y continue mientras que el int resuelto
             //sea diferente a la longitud del String palabra
@@ -72,58 +72,52 @@ public class jueguito {
                             resuelto++;                         //Le sumamos uno al contador de resuelto
                         } 
                         
-                        if (cRespuesta != palabraArray[i]) { //Si el caracter introducido es diferente a un caracter del arrayPalabra
+                        else if (cRespuesta != palabraArray[i]) { //Si el caracter introducido es diferente a un caracter del arrayPalabra
 
-                            errores -= 1; //Se le resta al contador errores (hay 10 intentos)
+                            errores -= 1; //Se le resta al contador errores (hay 8 intentos)
                             System.out.println(errores);
 
                             //Muestra el siguiente dibujo
-                            if (errores == 9) {
+                            if (errores == 7) {
                                 System.out.println("___");
-                                break;
-                            } else if (errores == 8) {
-                                System.out.println("  _______");
-                                System.out.println("  |");
-                                System.out.println("  |");
-                                System.out.println(" _|_ ");
-                                break;
-                            } else if (errores == 7) {
-                                System.out.println("  _______");
-                                System.out.println("  |    O");
-                                System.out.println("  |");
-                                System.out.println(" _|_ ");
                                 break;
                             } else if (errores == 6) {
                                 System.out.println("  _______");
-                                System.out.println("  |    O");
-                                System.out.println("  |   /");
+                                System.out.println("  |");
+                                System.out.println("  |");
                                 System.out.println(" _|_ ");
                                 break;
                             } else if (errores == 5) {
                                 System.out.println("  _______");
                                 System.out.println("  |    O");
-                                System.out.println("  |   /");
+                                System.out.println("  |");
                                 System.out.println(" _|_ ");
                                 break;
                             } else if (errores == 4) {
                                 System.out.println("  _______");
                                 System.out.println("  |    O");
-                                System.out.println("  |   /|");
+                                System.out.println("  |   /");
                                 System.out.println(" _|_ ");
                                 break;
-                            } else if (errores == 3) {
+                            }else if (errores == 3) {
                                 System.out.println("  _______");
                                 System.out.println("  |    O");
-                                System.out.println("  |   /|/");
+                                System.out.println("  |   /|");
                                 System.out.println(" _|_ ");
                                 break;
                             } else if (errores == 2) {
                                 System.out.println("  _______");
                                 System.out.println("  |    O");
                                 System.out.println("  |   /|/");
-                                System.out.println(" _|_  /");
+                                System.out.println(" _|_ ");
                                 break;
                             } else if (errores == 1) {
+                                System.out.println("  _______");
+                                System.out.println("  |    O");
+                                System.out.println("  |   /|/");
+                                System.out.println(" _|_  /");
+                                break;
+                            } else if (errores == 0) {
                                 System.out.println("  _______");
                                 System.out.println("  |    O");
                                 System.out.println("  |   /|/");
@@ -147,7 +141,7 @@ public class jueguito {
    // _|_   / \
 
    /*
-    * case 9:
+    *                       case 9:
                                 System.out.println("O");
                                 break;
                             case 8: 
