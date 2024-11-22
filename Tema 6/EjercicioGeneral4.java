@@ -20,6 +20,6 @@ public class EjercicioGeneral4 {
     public static void main(String[] args) {
         
         //el menos -i es para que vaya cogiendo la siguiente por orden invertido
-        letrasInvertidas[i] = letrasPalabra[letrasPalabras.length - 1 - i];
+        //letrasInvertidas[i] = letrasPalabra[letrasPalabras.length - 1 - i];
     }
 }
