@@ -1,4 +1,4 @@
-public class Ejercico9 {
+public class Ejercicio9 {
 
     /*
      * Versión 2: en lugar de mostrar solo el mayor, muéstralos todos ordenados de

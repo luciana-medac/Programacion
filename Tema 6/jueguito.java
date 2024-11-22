@@ -43,6 +43,7 @@ public class jueguito {
 
             //Esta variable la usamos para contar las veces que ha introducido una letra
             int resuelto = 0;
+
             //Usamos esta variable para contar cuando introduce una letra equivocada
             int errores = 10;
             
@@ -129,8 +130,9 @@ public class jueguito {
                                 System.out.println(" _|_  //");
                                 System.out.println();
                                 System.out.println("Tas muelto");
-                                break;
-                        }
+                                break; } else {
+                                    System.out.println("muelto");
+                                }
                     }
                 }
             }while(resuelto != palabra.length() || errores == 0); //Se repite el bucle mientras el contador sea diferente a la longitud del String palabra
