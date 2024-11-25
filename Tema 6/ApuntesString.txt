@@ -1,0 +1,19 @@
+length()                      ----                        Devuelve la longitud de la cadena
+indexOf(‘caracter’)           ----                        Devuelve la posición de la primera aparición de carácter
+lastIndexOf(‘caracter’)       ----                        Devuelve la posición de la última aparición de carácter
+charAt(n)             ----                                Devuelve el carácter que está en la posición n
+substring(n1,n2)      ----                                Devuelve la subcadena comprendida entre las posiciones n1 y n2-1
+toUpperCase()         ----                                Devuelve la cadena convertida a mayúsculas
+toLowerCase()         ----                                Devuelve la cadena convertida a minúsculas
+equals("cad")         ----                                Compara dos cadenas y devuelve true si son iguales
+equalsIgnoreCase("cad")  ----                             Igual que equals, pero sin considerar mayúsculas y minúsculas
+compareTo(OtroString)    ----                             Devuelve 0 si las dos cadenas son iguales. 
+                                                          <0 si la primera es alfabéticamente menor que la segunda 
+                                                          o >0 si la primera es alfabéticamente mayor que la segunda
+compareToIgnoreCase(OtroString)  ----                     Igual que compareTo, pero sin considerar mayúsculas y minúsculas
+valueOf(N)                       ----                     Convierte el valor N a String. N puede ser de cualquier tipo
+replace (char viejoChar, char nuevoChar)  ----            Remplaza en el string que invoca el método, el 
+                                                          viejoChar por el nuevoChar, todas las apariciones
+replaceAll(String viejaString, String nuevaString)   ---- Remplaza en el string que invoca al método la viejaString
+                                                          por la nuevaString. Se utiliza para reemplazar subcadenas
+
