@@ -73,7 +73,7 @@ public class RepasoGeneral7 {
             }
 
             if (fila == 0 && columna == 0) {
-                System.out.println("Fin del juego, has ganado!!!");
+                System.out.println("has llegao a la meta!!!");
                 break;
             }
         }

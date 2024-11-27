@@ -54,8 +54,6 @@ public class jueguito {
             System.out.println(" _|_  //");
             System.out.println();
             System.out.println("Tas muelto");
-        } else {
-            System.out.println("muelto");
         }
     }
 
@@ -63,8 +61,7 @@ public class jueguito {
 
         // Aquí se guardan las palabras que se pueden adivinar
         String[] palabrasAleatorias = { "manzana", "elefante", "computadora", "estrella", "océano", "montaña", "cielo",
-                "flor",
-                "libro", "sol", "luna", "árbol", "río", "nube", "dinosaurio", "puerta", "silla", "mesa", "teléfono",
+                "flor", "libro", "sol", "luna", "árbol", "río", "nube", "dinosaurio", "puerta", "silla", "mesa", "teléfono",
                 "coche" };
 
         // Aquí guarda un número random del 0 al 20
@@ -74,7 +71,7 @@ public class jueguito {
         // número random para que nos de la posición
         // de una de las palabras
         String palabra = palabrasAleatorias[random];
-        System.out.println(palabra);
+        //System.out.println(palabra);
 
         // Creamos un char con la longitud de la palabra que se vaya a generar
         char[] solucion = new char[palabra.length()];
@@ -118,27 +115,28 @@ public class jueguito {
             // posición 0
             char cRespuesta = sRespuesta.charAt(0);
 
-            int veracidad = 0; // 0 --> falso 1 --> verdadero
+            boolean acierto = false; // 
+            int comprobar = 0;
 
             // Un bucle para que vaya comprobando la palabra
             for (int i = 0; i < palabra.length(); i++) {
 
                 if (cRespuesta == palabraArray[i]) { // Si el caracter introducido es igual un caracter del arrayPalabra
-                    if (solucion[i] == '_') {
                         solucion[i] = cRespuesta; // Intercambia '_' por el caracter que ha introducido el usuario
                         resuelto++; // Le sumamos uno al contador de resuelto
-                    }
-
-                    veracidad = 0; // para algo sirve
-                }
-
-                if (veracidad != 0) { // Si el caracter introducido es diferente a un caracter del arrayPalabra
-                    errores -= 1; // Se le resta al contador errores (hay 8 intentos)
-                    dibujarAhorcado(errores);
+                        comprobar++;
                 }
 
                 
             }
+            if(comprobar==0){ //esa letra no estaba en la palabra
+                errores--;
+                dibujarAhorcado(errores);
+            } //else { //la letra si estaba en la palabra
+               // dibujarAhorcado(errores);
+            // }
+
+
         } while (resuelto != palabra.length() && errores > 0); // Se repite el bucle mientras el contador sea diferente
                                                                // a la longitud del String palabra
             if (errores == 0) {
@@ -148,66 +146,3 @@ public class jueguito {
             }
     }
 }
-
-// ______
-// | o
-// | /|\
-// _|_ / \
-
-/*
- * case 9:
- * System.out.println("O");
- * break;
- * case 8:
- * System.out.println(" o");
- * System.out.println(" | ");
- * break;
- * case 7:
- * System.out.println("  O");
- * System.out.println( "/|");
- * case 6:
- * System.out.println(" O");
- * System.out.println("/|/");
- * case 5:
- * System.out.println(" O");
- * System.out.println("/|/");
- * System.out.println(" /");
- * case 4:
- * System.out.println(" O");
- * System.out.println("/|/");
- * System.out.println("//");
- * case 5:
- * 
- * 
- * 
- * String palabra = "paloma";
- * char[] solucion = {'_','_','_','_','_','_'};
- * 
- * char[] palabraArray = new char[palabra.length()];
- * 
- * for (int i = 0; i < palabraArray.length; i++) {
- * palabraArray[i] = palabra.charAt(i);
- * }
- * 
- * 
- * int resuelto = 0;
- * 
- * do{
- * for (int i = 0; i < solucion.length; i++) {
- * System.out.print(solucion[i] + " ");
- * }
- * System.out.println();
- * System.out.println("====================");
- * String sRespuesta = (System.console().readLine("Introduce tu letra: "));
- * char cRespuesta = sRespuesta.charAt(0);
- * for (int i = 0; i < palabra.length(); i++) {
- * if(cRespuesta == palabraArray[i]){
- * solucion[i] = cRespuesta;
- * resuelto++;
- * }
- * }
- * }while(resuelto != palabra.length() + 1);
- * }
- * 
- * }
- */
