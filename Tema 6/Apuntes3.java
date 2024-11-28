@@ -16,7 +16,7 @@ public class Apuntes3 {
                                                     //(en la primera aparición, si hay dos o, muestra la primera)
         System.out.println(palabra.lastIndexOf('a')); //Muestra la posición en la que está el caracter
                                                     //(en la última aparición)
-        palabra.toUpperCase(); //Pasa la frase entera a máyuscula
+        palabra.toUpperCase(); //Pasa la frase entera a mayuscula
         palabra.toLowerCase(); //Pasa la frase entera a minuscula
 
     }
