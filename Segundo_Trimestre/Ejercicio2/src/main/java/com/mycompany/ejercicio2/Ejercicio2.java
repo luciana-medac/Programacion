@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.ejercicio2;
 
 /*
@@ -16,6 +12,7 @@ Los árbitros tienen nombre, edad y categoría (naconal o internacional)
 
 En el main, crea 5 equipos, 5 jugadores y 2 árbitros
 */
+
 public class Ejercicio2 {
 
     public static void main(String[] args) {

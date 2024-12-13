@@ -19,7 +19,7 @@ public class Equipo{
 
     }
     
-    //Creamos los get
+    //Creamos los getters
     public String getCiudad (){
         return this.ciudad;
     }
@@ -30,7 +30,7 @@ public class Equipo{
         return this.preAnual;
     }
     
-    //Creamos los set
+    //Creamos los setters
     public void setCiudad(String c){
         this.ciudad = c;
     }
@@ -44,7 +44,7 @@ public class Equipo{
     //Método para imprimir
     public void imprimirEquipos(){
         System.out.println("El equipo es: " + this.ciudad + 
-                ", tiene este número de socio " + this.numSocio + " con este presupuesto " + this.preAnual);
+                ", tiene este numero de socio " + this.numSocio + " con este presupuesto " + this.preAnual);
     }
 }
 

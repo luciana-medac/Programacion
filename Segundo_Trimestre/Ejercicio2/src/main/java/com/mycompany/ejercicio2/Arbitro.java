@@ -4,15 +4,17 @@ package com.mycompany.ejercicio2;
 
 public class Arbitro {
     
+    //Atributos
     private String nombre;
     private int edad;
     private String categoria;
     
+    //Constructot
     public Arbitro (String n, int d, String c) {
     
-    this.nombre = n;
-    this.edad = d;
-    this.categoria = c;
+        this.nombre = n;
+        this.edad = d;
+        this.categoria = c;
     }
     
     //Creamos los get
