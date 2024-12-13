@@ -18,16 +18,24 @@ public class Ejercicio1 {
 
     public static void main(String[] args) {
         
+        //Creamos el objeto
         Coche coche1 = new Coche("4444KNM","Renault","Clio","rojo",120000);
-        
-        //coche1.kilometros = -200000;
-        coche1.setKilometros(305000);
-        
         Coche coche2 = new Coche("3322MNG","Renault","Clio","verde",20000);
         
-        coche1.imprimirCoche(); //primero se pone lo que se quiere imprimir, punto y se llama al método
+        //Ejecutamos sus métodos
+        coche1.imprimirCoche();
+        
+        //cambiamos los datos
+        //coche1.kilometros = -200000;
+        coche1.setKilometros(305000);
+        coche1.setMarca("Audi");
+        
+        //Se imprime el coche con los datos modificados
+        coche1.imprimirCoche(); //primero se pone lo que se quiere imprimir (el objeto), punto y se llama al método
         
         coche1.comprobarKm(); 
+        
+        
     }
    
 }

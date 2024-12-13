@@ -1,5 +1,13 @@
 package com.mycompany.ejercicio1; //ESTA LINEA ES IMPORTANTE
 
+//SIEMPRE VA A TENER ESTA ESTRUCTURA TODOS LOS FICHEROS DE UN OBJETO
+//1. Creamos los atributos
+//2. Creamos el constructor
+//3. Creamos los GET
+//4. Creamos los SET
+// ----------- AQUÍ ES SEGÚN NECESIDAD -----------------------------
+//5. Creamos los métodos para imprimir (o los métodos que necesitemos)
+
 //Clase para crear el tipo de dato Coche
 
 //Las clases son las plantillas
@@ -29,6 +37,28 @@ public class Coche {
     }
     
     //GETTERS (GET)
+    // - Si quiero CONSULTAR un atributo, se usa para devolver el valor
+    //Se pone el tipo de dato que devuelve, pero ningún parámetro
+    public int getKiometro(){
+        return this.kilometros;
+    }
+    
+    public String getMarca(){
+        return this.marca;
+        
+    }
+    
+    public String getColor(){
+        return this.color;
+    }
+    
+    public String getModelo(){
+        return this.modelo;
+    }
+    
+    public String getMatricula(){
+        return this.matricula;
+    }
     
     
     //SETTERS (SET) --> con ello podemos cambiar el atributo siendo privado
@@ -52,6 +82,10 @@ public class Coche {
     
     public void setModelo(String mo){
         this.modelo = mo;
+    }
+    
+    public void setMatricula(String mtr){
+        this.matricula = mtr;
     }
     
     public void imprimirCoche(){
