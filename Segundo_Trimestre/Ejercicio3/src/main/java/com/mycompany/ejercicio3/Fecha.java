@@ -51,7 +51,10 @@ public class Fecha {
     }
     
     public void imprimirFecha(){
-        System.out.println("La fecha es: " + this.);
+        System.out.println("La fecha es: " + this.dia + "/" + this.mes + "/" + this.ano);
     }
     
+    public void imprimirEstacion(){
+        
+    }
 }
