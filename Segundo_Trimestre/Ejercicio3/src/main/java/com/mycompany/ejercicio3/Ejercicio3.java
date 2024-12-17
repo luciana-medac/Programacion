@@ -28,25 +28,34 @@ public class Ejercicio3 {
         System.out.println("3. Imprimir el año");
         System.out.println("4. Imprimir la fecha completa");
         System.out.println("5. Imprimir la estación de la fecha");
+        System.out.println("6. Imprimir el siglo");
         
         int opcion = Integer.parseInt(System.console().readLine( "tu opción: "));
         
         switch (opcion) {
             case 1:
                 //imprime el dia
+                fecha1.imprimirDia();
                 break;
             case 2:
                 //imprime el mes
+                fecha1.imprimirMes();
                 break;
             case 3:
                 //imprime el año
+                fecha1.imprimirAno();
                 break;
             case 4:
                 //imprime la fecha completa
+                fecha1.imprimirFecha();
                 break;
             case 5:
                 //imprime la estacion
+                fecha1.imprimirEstacion();
                 break;
+            case 6:
+                //imprime el siglo
+                fecha1.imprimirSiglo();
             default:
                 throw new AssertionError();
         }

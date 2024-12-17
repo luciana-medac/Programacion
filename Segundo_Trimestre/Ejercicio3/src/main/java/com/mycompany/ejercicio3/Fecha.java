@@ -56,5 +56,26 @@ public class Fecha {
     
     public void imprimirEstacion(){
         
+         if ((mes == 12 && dia >= 21) || mes == 1 || mes == 2 || mes == 3 || (mes == 3 && dia < 21)) {
+            System.out.println("invierno");
+        } else if ((mes == 3 && dia >= 21) || mes == 4 || mes == 5 || (mes == 6 && dia < 21)) {
+            System.out.println("primavera");
+        } else if ((mes == 6 && dia >= 21) || mes == 7 || mes == 8 || (mes == 9 && dia < 21)) {
+            System.out.println("verano");
+        } else {
+            System.out.println("otoño");
+        }
+        
+    }
+    
+    public void imprimirSiglo() {
+        
+        if (ano<0) {
+            int siglo = (ano / 100) + 1;
+            System.out.println("Es el siglo " + siglo);
+        }
+        else{
+            System.out.println("No puedo imprimir este siglo");
+        }
     }
 }
