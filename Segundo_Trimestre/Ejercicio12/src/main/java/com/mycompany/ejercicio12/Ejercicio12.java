@@ -21,7 +21,7 @@ De cada habitacion, se debe saber:
 - Lado 2
 
 El main del programa preguntará al usuario el nombre, el valor de la vivienda, 
-la dirección de la viivenda y cuántas habitaciones tiene.
+la dirección de la vivienda y cuántas habitaciones tiene.
 Después, irá preguntando uno a uno los datos de cada habitacion
 Al terminar las preguntas, creará los objetos correpondientes y llamará a 
 un método de la clase Vivienda encargado de calcular el área total 
@@ -33,7 +33,17 @@ public class Ejercicio12 {
 
     public static void main(String[] args) {
         
+        //PREGUNTAMOS AL USUARIO
+        int lado1 = Integer.getInteger(System.console)
         
+        Habitacion[] habitaciones1 = {
+            
+            new Habitacion ("salon", 50, 45 ),
+            new Habitacion ("cocina", 60, 55),
+            new Habitacion ("cuartoUno", 30, 40),
+            new Habitacion ("cuartoDos", 30, 45)
+            
+        }
         
     }
 }

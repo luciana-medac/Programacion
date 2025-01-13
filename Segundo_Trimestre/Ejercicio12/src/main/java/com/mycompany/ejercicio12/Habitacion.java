@@ -2,7 +2,7 @@ package com.mycompany.ejercicio12;
 
 public class Habitacion {
 
-    /ATRIBUTOS
+    //ATRIBUTOS
     private String nombre;
     private int lado1;
     private int lado2;

@@ -55,7 +55,7 @@ public class Vivienda {
         
         for (int i = 0; i < habitaciones.length; i++) {
             
-            System.out.println(Habitacion habitaciones  habitaciones[i].getNombre(););
+            System.out.println(this.habitaciones[i].getNombre());
         }
         
     }
