@@ -6,6 +6,7 @@ public class Vivienda {
     private String propietario;
     private int valor;
     private String direccion;
+    //Reflejamos la relación de cardinalidad 1:N
     private Habitacion[] habitaciones;
     
     //CONSTRUCTOR
@@ -51,6 +52,7 @@ public class Vivienda {
         return "Propietario: " + this.propietario + " valor de la vivienda: " + this.valor + " direccion: " + this.direccion + "las habitaciones: ";
     }
     
+    //Metodo para mostrar las hbitaciones
     public void mostrarHabitaciones(){
         
         for (int i = 0; i < habitaciones.length; i++) {
@@ -58,6 +60,16 @@ public class Vivienda {
             System.out.println(this.habitaciones[i].getNombre());
         }
         
+    }
+    
+    //Con el metodo de la clase habitacion calculamos el área de la vivienda
+    public void mostrarAreaVivienda(){
+        int mH = 0;
+        for (int i = 0; i < habitaciones.length; i++) {
+            mH += habitaciones[i].AreaVivienda();
+        }
+        //mostramos el área
+        System.out.println("El área de la vivienda es: " + mH + "m2");
     }
     
 }

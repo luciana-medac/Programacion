@@ -42,5 +42,14 @@ public class Habitacion {
         return "nombre: " + this.nombre + " lado 1: " + this.lado1 + " lado 2: " + this.lado2;
     }
     
+    //Metodos Adicionales
+    
+    //Devolvemos el area a la clase Vivienda
+    public int AreaVivienda(){
+        
+        int resultado = this.lado1 * this.lado2;
+        return resultado;
+    }
+    
     
 }
