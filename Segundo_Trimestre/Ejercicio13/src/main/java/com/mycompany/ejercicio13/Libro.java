@@ -73,13 +73,29 @@ public class Libro {
     }
     
     //MOSTRAR LIBROS
-    public String mostrarLibros(){
+    public void elegirLibro(){
         
-        //PRIMERO MUESTRO TODOS LOS LIBROS
+        //PRIMERO MUESTRO TODOS LOS LIBROS - main sout toString
+        
         //SI QUIERE RESERVAR O DEVOLVER
-        //SI ELIGE RESERVAR UNO DE LOS LIBROS SE MOSTRARÁ SI PUEDE O NO
-        //SI ELIGE DEVOLVER UN LIBRO, SE MOSTRARÁ SI LO PUEDE DEVOLVER O NO
+        String opcion = System.console().readLine("¿Reserva o devolucion?");
         
+        if (opcion.equals("reserva")) {
+            //SI ELIGE RESERVAR UNO DE LOS LIBROS SE MOSTRARÁ SI PUEDE O NO
+            if (estado == true) {
+                System.out.println("no se puede reservar");
+            } else {
+                System.out.println("reservado!");
+            }
+            
+        } else if (opcion.equals("devolucion")) {
+            //SI ELIGE DEVOLVER UN LIBRO, SE MOSTRARÁ SI LO PUEDE DEVOLVER O NO
+            if (estado == false) {
+                System.out.println("libro devuelto");
+            } else {
+                System.out.println("no es posible hacer la devolucion");
+            }
+        }
     }
 
 

@@ -34,10 +34,27 @@ public class Ejercicio13 {
         
         //CREAMOS LOS AUTORES
         Autor Dazai = new Autor("Dazai Osamu", "Japones");
-        Autor Ernesto = new Autor
+        Autor Ernesto = new Autor("Ernesto Sabato", "Argentino");
         
+        //CREAMOS LOS LIBROS
+        Libro libro1 = new Libro("Indigno de ser humano", Dazai, Shueisha, 2222, true);
+        Libro libro2 = new Libro("El tunel", Ernesto, Eterna, 3333, false);
         
+        System.out.println("los libros son los siguientes: ");
+        System.out.println("1." + libro1);
+        System.out.println("2." + libro2);
+        int eleccion = Integer.parseInt(System.console().readLine( "eleccion: " ));
         
+        switch (eleccion) {
+            case 1:
+                libro1.elegirLibro();
+                break;
+            case 2:
+                libro2.elegirLibro();
+                break;
+            default:
+                throw new AssertionError();
+        }
         
         
     }
