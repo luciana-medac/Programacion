@@ -4,6 +4,8 @@
 
 package com.mycompany.ejercicio13;
 
+import java.util.Scanner;
+
 /*
 Ejercicio 13. Desarrolla la aplicación de gestión de libros de una biblioteca.
 
@@ -39,10 +41,16 @@ public class Ejercicio13 {
         //CREAMOS LOS LIBROS
         Libro libro1 = new Libro("Indigno de ser humano", Dazai, Shueisha, 2222, true);
         Libro libro2 = new Libro("El tunel", Ernesto, Eterna, 3333, false);
+        Libro libro3 = new Libro("El ocaso", Dazai, Shueisha, 4444, true);
+        Libro libro4 = new Libro("La resistencia", Ernesto, Eterna, 5555, false);
+        Libro libro5 = new Libro("Antes del fin", Ernesto, Eterna, 6666, true);
         
         System.out.println("los libros son los siguientes: ");
         System.out.println("1." + libro1);
         System.out.println("2." + libro2);
+        System.out.println("3. " + libro3);
+        System.out.println("4. " + libro4);
+        System.out.println("5. " + libro5);
         int eleccion = Integer.parseInt(System.console().readLine( "eleccion: " ));
         
         switch (eleccion) {
@@ -51,6 +59,15 @@ public class Ejercicio13 {
                 break;
             case 2:
                 libro2.elegirLibro();
+                break;
+            case 3:
+                libro3.elegirLibro();
+                break;
+            case 4:
+                libro4.elegirLibro();
+                break;
+            case 5:
+                libro5.elegirLibro();
                 break;
             default:
                 throw new AssertionError();
