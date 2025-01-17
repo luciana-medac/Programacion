@@ -68,7 +68,7 @@ public class Libro {
     //toString
     public String toString(){
         
-        return "titulo: " + this.titulo + " autor: " + this.autor + " editorial: " + this.editorial + " codigo: " + this.codigo + " estado: " + this.estado;
+        return "titulo: " + this.titulo + " autor: " + this.autor.getNombre() + " editorial: " + this.editorial.getNombre() + " codigo: " + this.codigo + " estado: " + this.estado;
         
     }
     
@@ -85,12 +85,14 @@ public class Libro {
             if (estado == true) {
                 System.out.println("no se puede reservar");
             } else {
+                this.estado = true;
                 System.out.println("reservado!");
             }
             
         } else if (opcion.equals("devolucion")) {
             //SI ELIGE DEVOLVER UN LIBRO, SE MOSTRARÁ SI LO PUEDE DEVOLVER O NO
             if (estado == false) {
+                this.estado = true;
                 System.out.println("libro devuelto");
             } else {
                 System.out.println("no es posible hacer la devolucion");
