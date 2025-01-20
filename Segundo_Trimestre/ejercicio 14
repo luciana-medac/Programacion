@@ -1,0 +1,74 @@
+ejercicio 14
+
+public class Estadio {
+
+       private String ciudad;
+       private String empresa;
+       private Zona zona;
+
+public Estadio (String c, String e, Zona z){
+
+       this.ciudad = c;
+       this.empresa = e;
+       this.zona = z;
+}
+
+public String getCiudad(){
+        return this.ciudad;
+}
+
+public String getEmpresa(){
+        return this.empresa;
+}
+
+public zona getZona(){
+        return this.zona;
+}
+
+public void setCiudad(String c){
+         this.ciudad = c;
+}
+
+public void setEmpresa(String e){
+          this.empresa = e;
+}
+
+public void setZona(Zona z){
+           this.zona = z;
+}
+
+public String toString(){
+            return “ciudad: “ + this.ciudad + “empresa: “ + this.empresa + “zona asignada: “ + this.zona;
+
+METODOS ADICIONALES
+
+public class entradasDisponibles(){
+            
+}
+
+
+
+CLASE ZONA
+public class Zona {
+          private int grada;
+          private int tribuna;
+          private int palco;
+
+CONSTRUCTOR
+
+public Zona(int g, int t, int p) {
+          this.grada = 100;
+          this.tribuna = 50;
+          this.palco = 20;
+}
+
+public 
+
+
+}
+
+
+MAIN
+
+Estadio estadio1 = new Estadio(“Zapatos”, “Choca”, Palco)
+
