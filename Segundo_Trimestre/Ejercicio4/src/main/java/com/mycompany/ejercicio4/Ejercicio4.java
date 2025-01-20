@@ -4,14 +4,17 @@
 
 package com.mycompany.ejercicio4;
 
-/* Personas.
+/*  
+    Personas.
     Crea una clase llamada personas que tenga como atributos el nombre, la edad, el género, y la nacionalidad, y como métodos tenga los habituales
     (constructor, setters, getters y toString).
 
     También se necesita un método que se llame presentacionIdioma() y que haga muestra una presentación de la persona en su idioma
     (se admite en español, inglés, francés e italiano)
 
-    En el main, haz varias personas de ejemplo e imprimir su presentacionIdioma para ver que todo funciona correctamente*/
+    En el main, haz varias personas de ejemplo e imprimir su presentacionIdioma para ver que todo funciona correctamente
+
+*/
 
 public class Ejercicio4 {
 
