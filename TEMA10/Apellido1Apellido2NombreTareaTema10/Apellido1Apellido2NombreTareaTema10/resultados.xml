@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultados SYSTEM "resultados.dtd">
+
+<!-- ELEMENTO RAIZ -->
+<resultados>
+    <!-- PRIMER PARTIDO -->
+    <partido> 
+        <!-- VILLARGORDO VS UTICA-->
+        <equipolocal>
+            <nombre>Villargordo</nombre>
+            <golesLocal>2</golesLocal>
+        </equipolocal>
+        
+        <equipovisitante>
+            <nombre>Utica</nombre>
+            <golesVisitante>3</golesVisitante>
+        </equipovisitante>
+    </partido>
+
+    <!-- SEGUNDO PARTIDO -->
+    <partido>
+        <!-- MARTOS VS LINARES -->
+        <equipolocal>
+            <nombre>Martos</nombre>
+            <golesLocal>2</golesLocal>
+        </equipolocal>
+
+        <equipovisitante>
+            <nombre>Linares</nombre>
+            <golesVisitante>3</golesVisitante>
+        </equipovisitante>
+    </partido>
+
+</resultados>
+    
+    
+    
