@@ -6,29 +6,61 @@
     <!-- PRIMER PARTIDO -->
     <partido> 
         <!-- VILLARGORDO VS UTICA-->
-        <equipolocal>
+        <equipo_local goles="2">
             <nombre>Villargordo</nombre>
-            <golesLocal>2</golesLocal>
         </equipolocal>
         
-        <equipovisitante>
+        <equipo_visitante goles="1">
             <nombre>Utica</nombre>
-            <golesVisitante>3</golesVisitante>
         </equipovisitante>
     </partido>
 
     <!-- SEGUNDO PARTIDO -->
     <partido>
         <!-- MARTOS VS LINARES -->
-        <equipolocal>
+        <equipo_local goles="3">
             <nombre>Martos</nombre>
-            <golesLocal>2</golesLocal>
-        </equipolocal>
+        </equipo_local>
 
-        <equipovisitante>
+        <equipo_visitante goles="2">
             <nombre>Linares</nombre>
-            <golesVisitante>3</golesVisitante>
-        </equipovisitante>
+        </equipo_visitante>
+    </partido>
+
+    <!-- SEGUNDO PARTIDO -->
+    <partido>
+        <!-- MARTOS VS LINARES -->
+        <equipo_local goles="3">
+            <nombre>Martos</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="2">
+            <nombre>Linares</nombre>
+        </equipo_visitante>
+    </partido>
+
+    <!-- SEGUNDO PARTIDO -->
+    <partido>
+        <!-- MARTOS VS LINARES -->
+        <equipo_local goles="3">
+            <nombre>Martos</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="2">
+            <nombre>Linares</nombre>
+        </equipo_visitante>
+    </partido>
+
+    <!-- QUINTO PARTIDO -->
+    <partido>
+        <!-- MENGIBAR VS VILLACARRILLO -->
+        <equipo_local goles="1">
+            <nombre>Mengibar</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="1">
+            <nombre>Villacarrillo</nombre>
+        </equipo_visitante>
     </partido>
 
 </resultados>
