@@ -10,6 +10,8 @@ public class Figura {
         
         System.out.println("calculamos el area");
         
+        //PARA PONER EL NÚMERO PI --> Math.PI
+        
     }
     
 }
