@@ -16,4 +16,22 @@ public class Partido {
         
     }
     
+    /*
+    -- RELACION DE DEPENDENCIA 
+    
+    public static void simularJugada(Atacante a, Defensor d){
+        
+        int resultado = a.getPotenciaDisparo() - d.getHabilidadDefensa();
+    
+        if(resultado > ){
+            //gana el atacante
+            sout ("gana tal" + a.getNombre())
+        } else {
+            //gana el defensa
+            sout ("gana tal" + a.getNombre())
+        }
+    }
+     
+    */
+    
 }

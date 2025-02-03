@@ -40,6 +40,6 @@ public class Atacante extends Jugador{
         
         int a = this.habilidadControl;
         int b = this.potenciaTiro;
-        return a + b;
+        return (a + b)/2;
     }
 }
