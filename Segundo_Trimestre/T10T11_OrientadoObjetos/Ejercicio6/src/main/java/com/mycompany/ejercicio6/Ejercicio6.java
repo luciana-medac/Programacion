@@ -11,14 +11,17 @@ public class Ejercicio6 {
 
     public static void main(String[] args) {
 
-        Figura figura1 = new Figura();
-        figura1.calcularArea();
-
+//        Figura figura1 = new Figura();
+//        figura1.calcularArea();
         Figura rectangulo1 = new Rectangulo();
         rectangulo1.calcularArea();
+        rectangulo1.calcularPerimetro();
 
         Figura cuadrado = new Cuadrado();
         cuadrado.calcularArea();
+        cuadrado.calcularPerimetro();
+        
+        
 
     }
 }

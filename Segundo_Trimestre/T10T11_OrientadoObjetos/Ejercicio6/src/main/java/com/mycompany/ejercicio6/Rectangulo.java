@@ -19,4 +19,14 @@ public class Rectangulo extends Figura{
         System.out.println("el area es: " + (a*b));
     }
     
+    @Override
+    public void calcularPerimetro(){
+        
+        int a = Integer.parseInt(System.console().readLine("Introduce la altura: "));
+        int b = Integer.parseInt(System.console().readLine("Introduce el ancho lado: "));
+        
+        System.out.println("el perimetro es: " + (a+a+b+b));
+        
+    }
+    
 }
