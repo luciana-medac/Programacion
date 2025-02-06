@@ -21,12 +21,13 @@ public class Ejercicio9 {
         
         Concepto[] conceptos1 = {c1, c2};
         
+        float precio = SumaPrecio.sumarPrecio(conceptos1);
         
-        
-        
-        Documento doc1 = new Factura("TetrisSL", "B2965112", "Martin Galileo", "7828451D", conceptos1 ,001, 0);
+        Documento doc1 = new Factura("TetrisSL", "B2965112", "Martin Galileo", "7828451D", conceptos1 ,001, precio);
+        Documento doc2 = new Presupuesto("Metalugia DAM", "B2945136", "Camila Rock", "7845124G", conceptos1, precio);
         
         doc1.imprimirDocumento();
+        doc2.imprimirDocumento();
         
     }
 }

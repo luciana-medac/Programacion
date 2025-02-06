@@ -5,7 +5,7 @@ public class Factura extends Documento{
     private int numeracion;
     private float precioConIVA;
     
-    public Factura(String nEmp, String c, String nCli, String d, Concepto[] con, int num, int pIVA){
+    public Factura(String nEmp, String c, String nCli, String d, Concepto[] con, int num, float pIVA){
 
         super(nEmp, c, nCli, d, con);
         this.numeracion = num;
@@ -43,10 +43,20 @@ public class Factura extends Documento{
         System.out.println("Nombre empresa: " + super.getNombreEmp() + "CIF:" + super.getCIF());
         System.out.println("Nombre cliente: " + super.getNombreCli() + "DNI: " + super.getDNI());
         System.out.println("------------------------------");
-        System.out.println("Concepto: " + super.getConcepto());
+       
+        for (int i = 0; i < super.getConcepto().length; i++) {
+            
+            System.out.println(super.getConcepto()[i].getDescripcion()); 
+            System.out.println(super.getConcepto()[i].getPrecio());
+            
+        }
+    
         System.out.println("------------------------------");
         System.out.println("Precio total: " + this.precioConIVA);
         
     }
     
+    
+    
+   
 }

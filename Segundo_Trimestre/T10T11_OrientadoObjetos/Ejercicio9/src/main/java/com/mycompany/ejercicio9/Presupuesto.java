@@ -2,20 +2,20 @@ package com.mycompany.ejercicio9;
 
 public class Presupuesto extends Documento{
     
-    private int precioSinIVA;
+    private float precioSinIVA;
     
-    public Presupuesto(String nEmp, String c, String nCli, String d, Concepto[] con, int pSIVA){
+    public Presupuesto(String nEmp, String c, String nCli, String d, Concepto[] con, float pSIVA){
         
         super(nEmp, c, nCli, d, con);
         this.precioSinIVA = pSIVA;
         
     }
 
-    public int getPrecioSinIVA() {
+    public float getPrecioSinIVA() {
         return precioSinIVA;
     }
 
-    public void setPrecioSinIVA(int precioSinIVA) {
+    public void setPrecioSinIVA(float precioSinIVA) {
         this.precioSinIVA = precioSinIVA;
     }
 
@@ -33,7 +33,14 @@ public class Presupuesto extends Documento{
         System.out.println("Nombre empresa: " + super.getNombreEmp() + "CIF:" + super.getCIF());
         System.out.println("Nombre cliente: " + super.getNombreCli() + "DNI: " + super.getDNI());
         System.out.println("------------------------------");
-        System.out.println("Concepto: " + super.getConcepto());
+        
+        for (int i = 0; i < super.getConcepto().length; i++) {
+            
+            System.out.println(super.getConcepto()[i].getDescripcion());
+            System.out.println(super.getConcepto()[i].getPrecio());
+            
+        }
+        
         System.out.println("------------------------------");
         System.out.println("Precio total: " + this.precioSinIVA);
         
