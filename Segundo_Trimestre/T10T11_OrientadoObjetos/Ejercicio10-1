@@ -1,0 +1,98 @@
+package juegocartas;
+
+// Enum para definir los colores permitidos
+enum ColorCarta {
+    ROJO, NEGRO
+}
+
+// Clase base para todas las cartas
+abstract class Carta {
+    protected String palo;
+    protected int numero;
+
+    public Carta(String palo, int numero) {
+        this.palo = palo;
+        this.numero = numero;
+    }
+
+    public abstract void mostrarCarta();
+}
+
+// Carta Española
+class CartaEspaniola extends Carta {
+    private String tipo; // "Numérica" o "Especial"
+
+    public CartaEspaniola(String palo, int numero) {
+        super(palo, numero);
+        this.tipo = (numero >= 1 && numero <= 7) ? "Numérica" : "Especial";
+    }
+
+    @Override
+    public void mostrarCarta() {
+        System.out.println("Carta Española -> Palo: " + palo + ", Número: " + numero + ", Tipo: " + tipo);
+    }
+}
+
+// Carta Francesa
+class CartaFrancesa extends Carta {
+    private ColorCarta color; // Usa el enum en lugar de String
+
+    public CartaFrancesa(String palo, int numero) {
+        super(palo, numero);
+
+        // Asignar color según el palo
+        if (palo.equalsIgnoreCase("Corazones") || palo.equalsIgnoreCase("Diamantes")) {
+            this.color = ColorCarta.ROJO;
+        } else {
+            this.color = ColorCarta.NEGRO;
+        }
+    }
+
+    @Override
+    public void mostrarCarta() {
+        System.out.println("Carta Francesa -> Palo: " + palo + ", Número: " + numero + ", Color: " + color);
+    }
+}
+
+// Clase principal
+public class Main {
+    public static void main(String[] args) {
+        System.out.print("Ingrese la cantidad de cartas a crear: ");
+        String cantidadStr = System.console().readLine();
+        int cantidad = Integer.parseInt(cantidadStr);
+
+        Carta[] cartas = new Carta[cantidad];
+
+        for (int i = 0; i < cantidad; i++) {
+            System.out.print("¿Qué tipo de carta desea crear? (Española / Francesa): ");
+            String tipoCarta = System.console().readLine().toLowerCase();
+
+            if (tipoCarta.equals("española")) {
+                System.out.print("Ingrese el palo (Oros, Copas, Espadas, Bastos): ");
+                String palo = System.console().readLine();
+
+                System.out.print("Ingrese el número de la carta (1-12): ");
+                int numero = Integer.parseInt(System.console().readLine());
+
+                cartas[i] = new CartaEspaniola(palo, numero);
+
+            } else if (tipoCarta.equals("francesa")) {
+                System.out.print("Ingrese el palo (Corazones, Diamantes, Tréboles, Picas): ");
+                String palo = System.console().readLine();
+
+                System.out.print("Ingrese el número de la carta (1-13): ");
+                int numero = Integer.parseInt(System.console().readLine());
+
+                cartas[i] = new CartaFrancesa(palo, numero);
+            } else {
+                System.out.println("Tipo de carta no válido. Intente de nuevo.");
+                i--; // Reintentar la entrada
+            }
+        }
+
+        System.out.println("\nCartas creadas:");
+        for (int i = 0; i < cantidad; i++) {
+            cartas[i].mostrarCarta();
+        }
+    }
+}
