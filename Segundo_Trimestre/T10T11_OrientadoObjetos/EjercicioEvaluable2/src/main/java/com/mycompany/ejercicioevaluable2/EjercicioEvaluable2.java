@@ -69,9 +69,8 @@ public class EjercicioEvaluable2 {
             default:
                 throw new AssertionError();
         }
-
-
-        //Lo estuve intentando hacer por nombre en lugar de con int pero me llevaría más tiempo del que tengo D:
+        
+        
         
 //        System.out.println("ELIGE EL ORIGEN Y EL DESTINO: ");
 //        System.out.println("1. " + p1);
