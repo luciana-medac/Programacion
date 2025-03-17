@@ -27,6 +27,6 @@ public class Tema11_Ejercicio2 {
         
         double n = s1.calcularValorTotalStock();
         
-        System.out.println(n);
+        System.out.println("Precio Total: " + n);
     }
 }
