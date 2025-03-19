@@ -22,8 +22,14 @@ public class Tema11_Ejercicio2 {
         
         s1.mostrarNombre();
         System.out.println("LO SIGUIENTE DA ERROR -----------");
+        
         s1.productosBajoStock();
+        
         System.out.println("VALOR TOTAL -----------");
+        
+        System.out.println("AGREGAR PRODUCTO ----------------");
+        
+        s1.agregarProducto(p3);
         
         double n = s1.calcularValorTotalStock();
         

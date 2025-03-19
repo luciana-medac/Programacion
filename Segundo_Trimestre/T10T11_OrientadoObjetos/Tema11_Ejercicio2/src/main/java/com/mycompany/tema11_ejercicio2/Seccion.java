@@ -39,10 +39,20 @@ public class Seccion {
     }
     
     //METODOS ADICIONALES
-    public String[] productosBajoStock(){
+    
+    public String productosBajoStock(){
         
+        //OTRA FORMA
+        String listaBajoStock = " ";
+        for (int i = 0; i < productos.length; i++) {
+            listaBajoStock = listaBajoStock + productos[i].getNombre() + " , ";
+            
+        }
+        
+        return listaBajoStock;
+        
+        /*
         int stock = 0;
-        
         Producto[] p2;
         
         for (int i = 0; i < productos.length; i++) {
@@ -57,11 +67,46 @@ public class Seccion {
         int contar = 0;
         
         for (int i = 0; i < p1.length; i++) {
+            
             p1[contar] = productos[i].getNombre();
             contar++;
         }
+        
+        for (int i = 0; i < p1.length; i++) {
+            System.out.println(p1);
+            
+        }
+        
         return p1;
+        Producto[] listaProductos;
+        
+        int cantidad = 0;
+        
+        for (int i = 0; i < listaProductos.length; i++) {
+            if (listaProductos[i].esBajoStock()) {
+                cantidad++;
+            }
+            
+        }
+        
+        Producto[] listaProductosBajoStock = new Producto[cantidad];
+        
+        int contador = 0;
+        for (int i = 0; i < listaProductosBajoStock.length; i++) {
+            if (listaProductos[i].esBajoStock()) {
+                listaProductosBajoStock[contador] = listaProductos[i];
+                contador ++;
+            }
+            
+        }
+        */
+        
     }
+    
+    
+    
+    
+    
 
     public void mostrarNombre(){
         
@@ -72,6 +117,17 @@ public class Seccion {
         
     }
     
+    
+    
+    public void agregarProducto(Producto p){
+        
+        
+        String nombre = System.console().readLine("Nombre producto: ");
+        double precio = Double.valueOf(System.console().readLine("Precio: "));
+        int stock = Integer.parseInt(System.console().readLine("Stock: "));
+        
+        Producto p0 = new Producto(nombre, precio, stock);
+    }
     public double calcularValorTotalStock(){
         
         double total = 0;
