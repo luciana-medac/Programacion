@@ -16,7 +16,7 @@ public class Tema11_Ejercicio2 {
         Producto p2 = new Producto("Bollos", 2.3, 5);
         Producto p3 = new Producto("Bizcocho", 4.3, 4);
         
-        Producto[] productos1 = {p1,p2,p3} ;
+        Producto[] productos1 = {p1,p2,p3};
         
         Seccion s1 = new Seccion("Bolleria", productos1);
         
@@ -29,10 +29,26 @@ public class Tema11_Ejercicio2 {
         
         System.out.println("AGREGAR PRODUCTO ----------------");
         
-        s1.agregarProducto(p3);
+        
+        System.out.println("");
         
         double n = s1.calcularValorTotalStock();
         
         System.out.println("Precio Total: " + n);
+        
+        System.out.println("");
+        
+        Seccion s2 = new Seccion("Bolleria", productos1);
+        Seccion s3 = new Seccion("Bolleria", productos1);
+        
+        Seccion[] secciones = {s1, s2, s3};
+        
+        Supermercado su1 = new Supermercado("Masymas", "C/locuron", secciones);
+        
+        System.out.println("METODO DEL SUPERMERCADO");
+        
+        double su = su1.valorTotalStock(secciones);
+        
+        System.out.println("El valor total:" + su);
     }
 }

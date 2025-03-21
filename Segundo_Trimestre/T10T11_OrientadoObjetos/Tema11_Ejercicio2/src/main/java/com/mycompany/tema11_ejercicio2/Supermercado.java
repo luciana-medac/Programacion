@@ -47,6 +47,34 @@ public class Supermercado {
     }
     
     
+    public String obtenerProductoBajoStock(Producto[] p){
+        
+        String listaBajoStock = " ";
+        for (int i = 0; i < p.length; i++) {
+            listaBajoStock = listaBajoStock + p[i].getNombre() + " , ";
+            
+        }
+        
+        return listaBajoStock;
+    }
     
-
+    public double valorTotalStock(Seccion[] s){
+        
+        double total = 0;
+        
+        for (int i = 0; i < s.length; i++) {
+            
+            total += s[i].calcularValorTotalStock();
+            
+        }
+        
+        return total;
+        
+    }
+    
+    public void agregarSeccion(){
+        
+        
+        
+    }
 }

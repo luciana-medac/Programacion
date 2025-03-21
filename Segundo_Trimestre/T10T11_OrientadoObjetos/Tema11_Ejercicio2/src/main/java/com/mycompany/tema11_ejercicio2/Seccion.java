@@ -121,13 +121,38 @@ public class Seccion {
     
     public void agregarProducto(Producto p){
         
-        
+        /*
         String nombre = System.console().readLine("Nombre producto: ");
         double precio = Double.valueOf(System.console().readLine("Precio: "));
         int stock = Integer.parseInt(System.console().readLine("Stock: "));
         
         Producto p0 = new Producto(nombre, precio, stock);
+        
+        return p0;
+        */
+        
+        /*
+        
+        SE LE AGREGA A LOS ATRIBUTOS EL CONTADOR
+        SE QUITA DEL CONSTRUCTOR EL ARRAY
+        productos[contador] = p;
+        contador++;
+        */
+        
     }
+    
+    /*
+    public void imprimirListaProducto(){
+        
+        for (int i = 0; i < contador.length; i++) {
+            System.out.println(productos[i].getNombre());
+            
+        }
+        
+    }
+    */
+    
+    
     public double calcularValorTotalStock(){
         
         double total = 0;
