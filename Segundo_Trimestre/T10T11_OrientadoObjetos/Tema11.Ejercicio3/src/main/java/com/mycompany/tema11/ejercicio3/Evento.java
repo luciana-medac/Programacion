@@ -71,10 +71,10 @@ public class Evento extends Plataforma{
         return "Evento{" + super.toString() + "fecha=" + fecha + ", horaInicio=" + horaInicio + ", precioEntrada=" + precioEntrada + ", capMaxima=" + capMaxima + ", ubicacion=" + ubicacion + '}';
     }
     
-//    @Override
-//    public void mostrarInformacion(){
-//        
-//    };
+    @Override
+    public void mostrarInformacion(){
+        
+    };
     
     @Override
     public boolean esContenidoPopular(){
